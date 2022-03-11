@@ -8,7 +8,7 @@ int main(void)
 {
 char decimanNums[] = "0123456789";
 int i;
-for (i = 0; i < 11; i++)
+for (i = 0; i < 10; i++)
 {
 	putchar(decimanNums[i]);
 }
