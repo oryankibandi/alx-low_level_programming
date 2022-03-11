@@ -7,13 +7,14 @@
  */
 int main(void)
 {
+int i;
 char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
 char upperAlphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-for (int i = 0; i < 26; i++)
+for (i = 0; i < 26; i++)
 {
 	putchar(alphabet[i]);
 }
-for (int i = 0; i < 26; i++)
+for (i = 0; i < 26; i++)
 {
 	putchar(upperAlphabet[i]);
 }

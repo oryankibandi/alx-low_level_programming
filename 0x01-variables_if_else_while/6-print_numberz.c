@@ -8,7 +8,7 @@ int main(void)
 {
 int decimalNums[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-for (int i = 0; i < 11; i++)
+for (i = 0; i < 11; i++)
 {
 	putchar('0' + decimalNums[i]);
 }

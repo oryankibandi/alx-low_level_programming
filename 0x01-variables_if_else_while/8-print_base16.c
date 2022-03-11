@@ -7,8 +7,8 @@
 int main(void)
 {
 char hexNums[] = "0123456789abcdef";
-
-for (int i = 0; i < 11; i++)
+int i;
+for (i = 0; i < 11; i++)
 {
 	putchar(hexNums[i]);
 }
