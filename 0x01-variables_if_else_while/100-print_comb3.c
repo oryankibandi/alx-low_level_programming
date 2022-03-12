@@ -1,25 +1,36 @@
 #include <stdio.h>
 
 /**
- * main - prints all combination of sngle digit numbers
+ * main - Prints numbers between 00 to 89.
+ *
  * Return: Returns 0
-*/
+ */
 int main(void)
 {
-int nums[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-int i;
-int j;
-for (i = 0; i < 10; i++)
+int i, e;
+
+i = 48;
+e = 48;
+
+while (e < 58)
 {
-	for (j = 0; j < 10; j++)
+	i = 48;
+	while (i < 58)
 	{
-		if (nums[i] < nums[j])
+		if (e != i && e < i)
 		{
-			putchar('0' + nums[i]);
-			putchar('0' + nums[j]);
+			putchar(e);
+			putchar(i);
+			if (i == 57 && e == 56)
+			{
+				break;
+			}
 			putchar(',');
+			putchar(' ');
 		}
+		i++;
 	}
+	e++;
 }
 putchar('\n');
 return (0);
