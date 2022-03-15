@@ -5,7 +5,7 @@
  * @i: parameter to be compared
  * Return: void
 */
-void past_late(int i)
+void past_late(int i,int e)
 {
 	int b, c, d;
 
@@ -15,7 +15,7 @@ void past_late(int i)
 		{
 			for (d = 0; d < 10; d++)
 			{
-				_putchar(a + '0');
+				_putchar(e + '0');
 				_putchar(b + '0');
 				_putchar(':');
 				_putchar(c + '0');
@@ -39,10 +39,10 @@ void jack_bauer(void)
 	{
 		if (a == 2)
 		{
-			past_late(4);
+			past_late(4,a);
 		} else
 		{
-			past_late(10);
+			past_late(10,a);
 		}
 	}
 }
