@@ -21,8 +21,11 @@ void times_table(void)
 				_putchar((k % 10) + '0');
 			} else
 			{
-				_putchar(' ');
-				_putchar(' ');
+				if(k != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
 				u = k + '0';
 				_putchar(u);
 			}
