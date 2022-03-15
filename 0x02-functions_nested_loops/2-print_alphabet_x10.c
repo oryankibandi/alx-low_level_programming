@@ -16,10 +16,10 @@ void print_alphabet_x10(void)
 	{
 		for (j = 0; j < 27; j++)
 		{
-			if(alphabet[j] == '\0')
+			if (alphabet[j] == '\0')
 			{
 				_putchar('\n');
-			}else
+			} else
 			{
 				_putchar(alphabet[j]);
 			}
