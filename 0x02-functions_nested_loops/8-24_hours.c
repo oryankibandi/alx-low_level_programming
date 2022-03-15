@@ -3,6 +3,7 @@
 /**
  * past_late - displays time past late
  * @i: parameter to be compared
+ * @e: value of a
  * Return: void
 */
 void past_late(int i, int e)
