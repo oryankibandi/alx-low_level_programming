@@ -10,6 +10,11 @@ char word[] = "_putchar\n";
 int i;
 for (i = 0; i < 10 ; i++)
 {
+	if (word[i] == '\0')
+	{
+		_putchar('\n');
+		break;
+	}
 	_putchar(word[i]);
 }
 return (0);
