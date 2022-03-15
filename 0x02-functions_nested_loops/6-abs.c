@@ -2,7 +2,7 @@
 /**
  * _abs - returns absolute value
  * @i: value to be checked
- * Retuen: i
+ * Return: i
 */
 int _abs(int i)
 {
