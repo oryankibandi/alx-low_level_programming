@@ -16,8 +16,13 @@ void print_alphabet_x10(void)
 	{
 		for (j = 0; j < 27; j++)
 		{
-			_putchar(alphabet[j]);
+			if(alphabet[j] == '\0')
+			{
+				_putchar('\n');
+			}else
+			{
+				_putchar(alphabet[j]);
+			}
 		}
 	}
-	_putchar('\n');
 }
