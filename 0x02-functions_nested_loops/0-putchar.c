@@ -8,10 +8,10 @@ int main(void)
 {
 char *word = "_putchar";
 
-while (*s != '\0')
+while (*word != '\0')
 {
-	_putchar(*s);
+	_putchar(*word);
 }
-_putchar(*s);
+_putchar('\n');
 return (0);
 }
