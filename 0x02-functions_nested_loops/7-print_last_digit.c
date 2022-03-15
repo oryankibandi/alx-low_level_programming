@@ -17,6 +17,6 @@ int print_last_digit(int i)
 	}
 	char charDigit = lastDigit + '0';
 
-	_putchar(charDigit)
+	_putchar(charDigit);
 	return (lastDigit);
 }
