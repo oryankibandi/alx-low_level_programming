@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_line - prints underscore
+ * @n: number of times to be printed
+ * Return: void
+*/
 void print_line(int n)
 {
 	int i;
