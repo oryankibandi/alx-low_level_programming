@@ -25,19 +25,20 @@ int stringlen(char *s)
 void puts_half(char *str)
 {
 	int length = stringlen(str);
-	int i, length2;
+	int i;
 
 	if (length % 2 != 0)
 	{
-		length2 = length - 1;
+		for ( i = (length - 1) / 2; i < length - 1; i++)
+		{
+			_putchar(str[i]);
+		}	
 	} else
 	{
-		length2 = length;
-	}
-
-	for (i = (length2 / 2); i < length; i++)
-	{
-		_putchar(str[i]);
+		for (i = length / 2; str[i] != 0; i++)
+		{
+			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
