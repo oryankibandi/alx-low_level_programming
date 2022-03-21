@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _strcpy - copies one string to a buffer
+ * @dest: destination
+ * @src: source string
+ * Return: dest
+*/
 char *_strcpy(char *dest, char *src)
 {
 	int i;
