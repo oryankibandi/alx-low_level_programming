@@ -5,6 +5,7 @@
  * main - adds positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
+ * Return: sum
  */
 
 int main(int argc, char *argv)
@@ -35,5 +36,5 @@ int main(int argc, char *argv)
 	}
 	printf("%d\n", sum);
 
-	return(sum);
+	return (sum);
 }
