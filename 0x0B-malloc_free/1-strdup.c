@@ -11,7 +11,8 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	int j, i = 0;
+	int i = 0;
+	int j;
 	char *arr;
 
 	while (str[i] != '\0')
