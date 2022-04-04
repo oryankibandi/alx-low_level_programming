@@ -58,7 +58,7 @@ int get_length(char *s)
 {
 	int l = 0;
 
-	while (s[i] != '\0')
+	while (s[l] != '\0')
 	{
 		l++;
 	}
