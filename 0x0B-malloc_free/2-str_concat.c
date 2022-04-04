@@ -20,6 +20,10 @@ char *str_concat(char *s1, char *s2)
 	} else if (s2 == NULL)
 	{
 		s2 = "";
+	} else if (s2 == NULL && s1 == NULL)
+	{
+		arr = "";
+		return (arr);
 	}
 
 	size_s1 = get_length(s1);
