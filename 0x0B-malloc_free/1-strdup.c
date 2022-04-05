@@ -21,9 +21,15 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	arr = (char *)malloc((sizeof(char)) * (i + 1));
+	arr = (char *)malloc(sizeof(char) * (i + 1));
 
-	for (j = 0; j < i; j++)
+	if (arr == NULL)
+	{
+		free(arr);
+		return (NULL);
+	}
+
+	for (j = 0; j <= i; j++)
 	{
 		arr[j] = str[j];
 	}
