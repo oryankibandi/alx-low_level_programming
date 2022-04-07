@@ -2,18 +2,14 @@
 #include <string.h>
 #include "main.h"
 
-unsigned int get_length(char *s)
-{
-	int k = 0;
-
-	while (s[k] != '\0')
-	{
-		k++;
-	}
-
-	return (k);
-}
-
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * @n: number of indexes
+ * Return: char *
+ *
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
