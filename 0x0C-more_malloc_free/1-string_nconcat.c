@@ -15,38 +15,31 @@ unsigned int get_length(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s3;
-	int i, j;
-	unsigned int l_s1, l_s2;
-	unsigned int tot_len;
+	char *p;
+	unsigned int i, ls2;
 
-	l_s1 = get_length(s1);
-	l_s2 = get_length(s2);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (n >= l_s2)
-	{
-		n = l_s2;
-	}
+	if (n >= strlen(s2))
+		ls2 = strlen(s2);
+	else
+		ls2 = n;
 
-	tot_len = l_s1 + n;
+	p = malloc(strlen(s1) + ls2 + 1);
 
-	s3 = malloc(sizeof(s3) * tot_len);
-
-	if (s3 == NULL)
-	{
-		free(s3);
+	if (p == NULL)
 		return (NULL);
-	}
 
-	for (i = 0; i < l_s1; i++)
-	{
-		s3[i] = s1[i];
-	}
+	for (i = 0; i < strlen(s1); i++)
+		p[i] = s1[i];
 
-	for (j = 0; j < n; j++)
-	{
-		s3[i + l_s1] = s2[j];
-	}
+	for (i = strlen(s1); i < strlen(s1) + ls2; i++)
+		p[i] = *s2++;
 
-	return (s3);
+	p[i] = '\0';
+
+	return (p);
 }
