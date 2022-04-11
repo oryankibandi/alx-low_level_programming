@@ -12,7 +12,7 @@ int main(void)
 unsigned int i = 0;
 unsigned int j;
 
-while (PROG != '\0')
+while (PROG[i] != '\0')
 	i++;
 
 for (j = 0; j < i; j++)
