@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 
+/*file: 2-print_strings.c*/
 /**
  * print_strings - prints strings passed
  * @separator: separator to print
