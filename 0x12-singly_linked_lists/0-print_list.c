@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 	unsigned int len, i = 0;
 
 	if (!f)
-		return (NULL);
+		return (0);
 
 	for (; f != NULL; f = f->next)
 	{
