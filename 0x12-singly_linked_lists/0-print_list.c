@@ -11,6 +11,8 @@ size_t print_list(const list_t *h)
 	const list_t *f = h;
 	char *str1;
 	unsigned int len, i = 0;
+	if (!f)
+		return (NULL);
 
 	for (; f != NULL; f = f->next)
 	{
