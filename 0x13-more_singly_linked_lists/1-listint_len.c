@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -12,12 +11,12 @@ size_t listint_len(const listint_t *h)
 	const listint_t *f = h;
 	size_t i = 0;
 
-	if (!h)
+	if (h == NULL)
 		return (-1);
 
 	while (f != NULL)
 	{
-		if (f->n)
+		if (f->n || f->n == 0)
 		{
 			f = f->next;
 			i++;
