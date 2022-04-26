@@ -10,32 +10,39 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *current_node;
-	listint_t *prev_node;
-	listint_t *next_node;
-	int pop;
+	listint_t *current;
+	listint_t *new;
 
-	if (!head)
-		return (-1);
+	if (head == NULL)
+		return (0);
+	new = malloc(sizeof(listint_t));
+	if (!new)
+		return (0);
 
-	if (index == 0)
+	new->next = NULL;
+	new->n = n;
+
+	if (idx == 0)
 	{
-		pop = pop_listint(head);
-		return (1);
+		new->next = *head;
+		(*head) = new;
+		return (new);
 	}
 
-	current_node = get_nodeint_at_index(*head, index);
-	prev_node = get_nodeint_at_index(*head, (index - 1));
-	next_node = get_nodeint_at_index(*head, (index + 1));
+	current = *head;
 
-	if (current_node == NULL || prev_node == NULL || next_node == NULL)
+	while (idx != 1)
 	{
-		return (-1);
+		current = current->next;
+		--idx;
+		if (current == NULL)
+		{
+			free(new);
+			return (NULL);
+		}
 	}
+	new->next = current->next;
+	current->next = new;
 
-	prev_node->next = next_node;
-
-	free(current_node);
-
-	return (1);
+	return (new);
 }
