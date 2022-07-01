@@ -13,7 +13,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int index;
 	unsigned long int sze;
 
-	if (ht == NULL || key == NULL)
+	if (ht == NULL || !key)
 		return (NULL);
 
 	sze = ht->size;
